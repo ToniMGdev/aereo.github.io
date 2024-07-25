@@ -204,7 +204,7 @@
 
 /* --------------- max size font */
 
-@media (min-width: 1200x){
+@media (min-width: 1200px){
 #slide-1 .titulo{ 
     font-size: 10rem;
 }
