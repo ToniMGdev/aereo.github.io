@@ -1,0 +1,145 @@
+#slide-6{
+    background: white;
+}
+
+#slide-6 *{
+    color: black;
+}
+/*     ------------------------------ caja general -*/
+#slide-6 .box-container{
+    flex-direction: column;  
+}
+
+/*     ------------------------------ secciones -*/
+#slide-6 .box-container section{
+    flex-direction: row;
+    padding: 10px; 
+}
+
+#slide-6 .box-container section h1{
+    font-size: 12vw;
+    line-height: 10vw;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+    #slide-6 .box-container section{
+        flex-direction: column;
+    }
+
+    #slide-6 .box-container section h1{
+        font-size: 4rem;
+        padding-left: 20px;
+        padding-bottom: 0px;
+    }
+}
+
+/*     ------------------------------ seccion 1*/
+#slide-6 .box-container section>p{
+    width: 50%; 
+    padding: 0 20% 0 10px;
+    font-size: 1.6vw;
+    font-weight: lighter;
+    line-height: 1.7vw;
+}
+
+@media (max-width: 1000px) {
+    #slide-6 .box-container section>p{
+        width: 100%; 
+        padding: 0 0 30px 20px;
+    }
+    #slide-6 .box-container section>p{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+/*     ------------------------------ seccion 2*/
+#slide-6 .box-container section div{
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+#slide-6 .box-container section div article{
+    flex-direction: column;
+    width: 45%;
+}
+
+#slide-6 .box-container section div article div{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    border: 1px grey dashed;
+    border-bottom-right-radius: 50%;
+}
+
+#slide-6 .box-container section div h2{
+    font-size: 1.3vw;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+#slide-6 .box-container section div p{
+    font-size: 1.2vw;
+    font-weight: lighter;
+    line-height: 1.1vw;
+}
+
+@media (max-width: 1000px) {
+    
+    #slide-6 .box-container section div{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 20px;
+    }
+    #slide-6 .box-container section div article{
+        width: 100%;
+    }
+
+    #slide-6 .box-container section div h2{
+        font-size: 1.4rem;
+    }
+    
+    #slide-6 .box-container section div p{
+        font-size: 1rem;
+        line-height: 0.9rem;
+    }
+
+    #slide-6 .box-container section .hidden{
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    #slide-6 .box-container section div div{
+        display: none;
+    }
+
+}
+
+/* --------------- max size font */
+
+@media (min-width: 1201px){
+    #slide-6 .box-container section h1{
+        font-size: 9rem;
+        line-height: 8rem;
+    }
+    #slide-6 .box-container section>p{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+    #slide-6 .box-container section div h2{
+        font-size: 1rem;
+    }
+    
+    #slide-6 .box-container section div p{
+        font-size: 0.8rem;
+        line-height: 0.7rem;
+    }
+}

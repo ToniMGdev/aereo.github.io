@@ -1,0 +1,30 @@
+/* -----------------------menu flotante ----*/
+
+.navscroll {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  background-color: white;
+  padding: 2px;
+  z-index: 1;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  box-shadow: -3px 3px 5px hsla(0, 0%, 50%, 0.725)
+    
+  }
+.navscroll a {
+  font-size: 1rem;
+  color: black;
+  display: inline-block;
+  margin: 0;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.navscroll a:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transition: all 0.5s ease;
+}

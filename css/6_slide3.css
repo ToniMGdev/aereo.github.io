@@ -1,0 +1,196 @@
+
+/* ----------------- la caja contenedora */
+#slide-3 .box-container { 
+    flex-direction: row; /*cambias de filas a columnas*/
+    flex-wrap: nowrap; /*si no caben los hijos cambia de linea*/
+    justify-content: start; /*alinear desde el inicio*/ 
+}
+
+@media (max-width: 1000px) {
+    
+    #slide-3 .box-container {
+        flex-direction: column; /*cambias a columnas*/  
+        width: 80%;
+    }}
+
+@media (max-width: 750px) {
+    #slide-3 .box-container {
+        width: 100%;
+    }}
+
+/* ------------- cada una de las secciones */
+#slide-3 .section1,
+#slide-3 .section2,
+#slide-3 .section3 { 
+    padding: 30px;
+    flex-basis: 33.3%;
+}
+
+/* ---------- seccion 1*/
+#slide-3 .section1{
+    background-color: var(--color-secondary);
+    flex-direction: column; /*cambia a columnas los elementos*/
+    justify-content: space-between; /*espacio entre ellos*/
+}
+
+#slide-3 .section1 h1{
+    font-size: 3vw;
+}
+
+#slide-3 .section1 p{
+    font-size: 1.2vw;
+}
+
+#slide-3 .section1 div{
+    flex-direction: column;
+}
+
+#slide-3 .section1 a{
+    width:fit-content;
+    text-decoration: none;
+    padding: 11px 20px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-top: 25px;
+    font-size: 1rem;
+    }
+
+#slide-3 .section1 a:hover {
+    background-color: white;
+    color: var(--color-primary);
+    transition: 0.3s ease 0s;
+    }
+
+/* ------------- seccion 2*/
+
+#slide-3 .section2{
+    background-image: url(/img/plane_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 55% 0;
+    flex-direction: column; /*cambia a columnas los elementos*/
+    justify-content: end; /*alinear al final*/
+    cursor: pointer;
+}
+
+#slide-3 .section2 div{
+    flex-direction: column;
+}
+
+#slide-3 .section2 h1{
+    font-size: 2.2vw;
+}
+
+#slide-3 .section2 p{
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+
+    #slide-3 .section2{ /*ajuste de bg*/
+        background-size: 150%;
+        background-position: 0;
+    }}
+
+
+@media (max-width: 750px) {
+    #slide-3 .section2{ /*ajuste de bg*/
+        background-size: cover;
+    }}
+
+/* ----------------- seccion 3*/
+
+#slide-3 .section3{
+    background-color: #bc7155;
+    background-image: url(/img/plane_route2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    justify-content: end;
+    cursor: pointer;
+}
+
+#slide-3 .section3 div{
+    flex-direction: column;
+}
+
+#slide-3 .section3 h1{
+    font-size: 2.2vw;
+}
+
+#slide-3 .section3 p{
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    #slide-3 .section3{ /*ajuste de bg*/
+        background-position: right;
+        background-size: 40%;
+    }}
+
+
+@media (max-width: 750px) {
+    .section3{ /*ajuste de bg*/
+        background-size: contain;
+    }}
+
+
+/* --------------- ocultar/mostrar las "p" de la caja*/
+
+#slide-3 p.hidden{ 
+    opacity: 0;
+    height: 0px;  
+}
+
+#slide-3 .section2:hover .hidden,
+#slide-3 .section3:hover .hidden { 
+        transition: 
+            font-size .2s ease 0s,
+            padding-top 0.4s ease .2s,
+            width .2s ease 0s,
+            height .2s ease 0s,
+            opacity .4s ease .4s;
+        padding-top: 20px;
+        height: auto;
+        opacity: 100;
+    
+    }
+
+@media (max-width: 1000px) {
+
+    #slide-3 p.hidden{
+        opacity: 100;
+        padding-top: 20px;
+        padding-right: 30px;
+        height: auto;
+    }}
+
+/* --------------- max size font */
+
+@media (min-width: 1201px){
+    #slide-3 .section1 h1{
+        font-size: 2.2rem;
+    }
+    
+    #slide-3 .section1 p{
+        font-size: 1rem;
+    }
+    #slide-3 .section2 h1{
+        font-size: 2rem;
+    }
+    
+    #slide-3 .section2 p{
+        font-size: 1rem;;
+    }
+    #slide-3 .section3 h1{
+        font-size: 2rem;
+    }
+    
+    #slide-3 .section3 p{
+        font-size: 1rem;;
+    }
+    }
+

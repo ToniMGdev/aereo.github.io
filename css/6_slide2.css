@@ -1,0 +1,105 @@
+/* -------------------------- general */
+
+#slide-2{
+    background: white;
+}
+
+#slide-2 .box-container{
+    flex-direction: column;
+    padding-left:40%;
+ 
+}
+
+#slide-2 p,
+#slide-2 h1,
+#slide-2 h2{
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    #slide-2 .box-container{
+        padding-left: 20px;
+    }}
+
+/* -------------------------- titulo grande */
+
+#slide-2 h1{ 
+    font-size: 4vw;
+    line-height: 4vw;
+    padding: 10px;   
+}
+
+@media (max-width: 1000px) {
+    #slide-2 h1{ 
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+    }}
+
+/* -------------------------- secciones */
+
+#slide-2 .sections{
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10% 10%;
+}
+
+#slide-2 section{
+    flex-direction: column;
+    width: 45%;
+    min-height: 10vw;
+    border-top: 1px solid black;  
+}
+
+@media (max-width: 1000px) {
+    #slide-2 .sections{
+        padding-top: 10%;
+    }
+
+    #slide-2 section{
+        width: 100%;
+    }}
+
+@media (max-width: 750px) {
+    #slide-2 section p{
+        display: none;
+    }}
+
+/* dentro de las secciones */
+#slide-2 section h2{
+    font-weight: lighter;
+    padding: 10px 0;
+    font-size: 2.2vw;
+}
+#slide-2 section p{
+    font-size: 1.5vw;
+    padding: 10px 0;
+}
+
+@media (max-width: 1000px) {
+    #slide-2 section h2{
+        font-size: 1.5rem;
+    }
+    #slide-2 section p{
+        font-size: 1rem;
+    }}
+
+/* --------------- max size font */
+
+@media (min-width: 1201px){
+    #slide-2 h1{ 
+        font-size: 3.2rem;  
+        line-height: 3rem; 
+    }
+    #slide-2 section h2{
+        font-size: 1.8rem;
+        line-height: 1.6rem;
+    }
+    #slide-2 section p{
+        font-size: 1.1rem;
+    }
+    #slide-2 .box-container{
+        padding-left:450px;
+     
+    }
+    }
+

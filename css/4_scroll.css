@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth; /*suavizar el scroll*/
+  }
+
+.containerscroll {
+  height: 100vh; /*100% de la altura del viewport*/
+  overflow-y: scroll; /*indique que, lo que no quepa, a scroll*/
+  scroll-snap-type: y mandatory;/*el scroll se va a aplicar en vertical y que va a ser obligatorio*/
+  scroll-padding: 0; /*separación al detener el scroll*/
+}
+
+.slide {
+  scroll-snap-align: start; /* indicar la posición de ajuste*/
+  scroll-margin: 0;
+}
+
+

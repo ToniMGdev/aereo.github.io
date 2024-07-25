@@ -1,0 +1,222 @@
+
+
+/* ------------------------------- tamaños box y partes del box --- */
+
+#slide-1 .box-container {
+    flex-direction: column;
+}
+
+#slide-1 .header{
+    width: 100%;
+    height: 30%;
+}
+#slide-1 .contenido{
+    width: 100%;
+    height: 60%;
+}
+#slide-1 .footer{
+    width: 100%;
+    height: 10%;
+}
+
+@media (max-width: 750px) {
+    #slide-1 .box-container{
+        justify-content: space-between;
+    }
+
+    #slide-1 .header{
+        flex-direction: column;
+        height: auto; 
+    }}
+
+/* ------------------------------- titulo ---*/
+
+#slide-1 .titulo{
+    width: 50%;
+    font-size: 14vw;
+    line-height: 10vw;
+    font-weight: bold;
+}
+
+#slide-1 .titulo span {
+    font-size: 4vw;
+    line-height: 6vw;
+}
+
+@media (max-width: 750px) {
+    
+    #slide-1 .header .titulo{
+        width: 100%;
+        order: 2;
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+}
+
+/* ------------------------------- menu + frase ---*/
+
+#slide-1 .menu{
+    flex-direction: column;
+    width: 50%;}
+
+@media (max-width: 750px) {
+    #slide-1 .menu{
+        width: 100%;}
+
+    #slide-1 .menu p{
+        align-self: flex-start;
+        padding: 10px;
+        font-size: 2rem;
+    }
+}
+
+/* ------------------------------- menu ---*/
+
+#slide-1 .menu nav{
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;}
+
+#slide-1 .menu nav>a {
+    text-decoration: none;
+    padding: 20px 5px;
+    position: relative;
+    
+}
+
+#slide-1 .menu nav>a::before {/* poner contenido vacio para meterle borde y hacer efecto subrayado*/
+    content: "";
+    width: 0px;
+    border-bottom: 1px solid var(--color-white);
+    position: absolute;
+    bottom: 15px;
+    left: 2px;
+}
+
+#slide-1 .menu nav>a:hover::before { /*hacer el efecto subrayado con hover*/
+    transition: all 0.6s;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+
+    #slide-1 .menu nav>a {
+        display: none;
+    }
+    #slide-1 nav{
+        align-self: flex-end;
+    }
+}
+
+/* ------------------------------- iconos ---*/
+
+#slide-1 .menu nav div>a {
+    text-decoration: none;
+    border-radius: 50px;
+    line-height: 0;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+}
+
+#slide-1 .menu nav div a:hover {
+    background-color: var(--color-shadow);
+    transition: all 0.3s;
+}
+
+#slide-1 .menu nav div>a img{
+    width: 15px;
+    height: 15px;}
+
+/* ------------------------------- frase ---*/
+
+#slide-1 .menu p{
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px auto;
+    font-size: 3.5vw;
+    line-height: 3vw;
+}
+
+@media (max-width: 750px) {
+    #slide-1 .menu p{
+        width: 100%;}
+}
+
+/* ------------------------------- imagen ---*/
+
+#slide-1 .contenido {
+    background-image: url(/img/planeheader.webp);
+    background-size: cover;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 750px) {
+
+    #slide-1 .contenido{
+        display: none;    
+    }}
+
+/* --------------------------------- footer --*/
+
+.footer{
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px 20px;
+}
+
+.footer p{
+    font-size: 2.5vw;
+}
+
+.footer div a{
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.footer div a:hover {
+    background-color: var(--color-shadow);
+    transition: all 0.3s;
+}
+
+
+@media (max-width: 750px) {
+      
+    #slide-1 .footer{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #slide-1 .footer p{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+}
+
+/* --------------- max size font */
+
+@media (min-width: 1200x){
+#slide-1 .titulo{ 
+    font-size: 10rem;
+}
+
+#slide-1 .titulo span {
+    font-size: 3rem;
+}
+
+#slide-1 .menu p{
+    font-size: 3rem;
+}
+.footer p{
+    font-size: 2rem;
+}
+}

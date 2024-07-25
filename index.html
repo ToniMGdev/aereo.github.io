@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/1_style.css" />
+</head>
+
+<body>
+
+    <!-- https://www.flyhyer.com/ -->
+
+    <!-- menu flotante -->
+    <nav class="navscroll">
+        <a href="#slide-1">Slide 1</a><br>
+        <a href="#slide-2">Slide 2</a><br>
+        <a href="#slide-3">Slide 3</a><br>
+        <a href="#slide-4">Slide 4</a><br>
+        <a href="#slide-5">Slide 5</a><br>
+        <a href="#slide-6">Slide 6</a><br>
+        <a href="#slide-7">Slide 7</a><br>
+        <a href="#slide-8">Slide 8</a><br>
+        <a href="#slide-9">Slide 9</a><br>
+    </nav>
+
+    <!-- scrolls -->
+
+    <div class="containerscroll">
+        <div include-html="./partions/slide1.html" class="slide" id="slide-1"></div>
+        <div include-html="./partions/slide2.html" class="slide" id="slide-2"></div>
+        <div include-html="./partions/slide3.html" class="slide" id="slide-3"></div>
+        <div include-html="./partions/slide4.html" class="slide" id="slide-4"></div>
+        <div include-html="./partions/slide5.html" class="slide" id="slide-5"></div>
+        <div include-html="./partions/slide6.html" class="slide" id="slide-6"></div>
+        <div include-html="./partions/slide7.html" class="slide" id="slide-7"></div>
+        <div include-html="./partions/slide8.html" class="slide" id="slide-8"></div>
+        <div include-html="./partions/slide9.html" class="slide" id="slide-9"></div>
+    </div>
+
+
+
+
+
+
+    <script src="js/include-html.js"></script>
+    <!-- 
+    script para ir incluyendo trozos de html ordenadamente, como se hace con @imports
+    en el css, requiere poner el atributo "include-html" y la url de las partes de html
+    dentro del div
+    -->
+
+</body>
+
+</html>
