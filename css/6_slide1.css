@@ -149,7 +149,7 @@
 /* ------------------------------- imagen ---*/
 
 #slide-1 .contenido {
-    background-image: url(/img/planeheader.webp);
+    background-image: url(img/planeheader.webp);
     background-size: cover;
     background-position-y: 60%;
     background-repeat: no-repeat;
@@ -221,7 +221,7 @@
 }
 }
 
-/* --------------- movil */
+/* --------------- font movil */
 
 @media (max-width: 400px) {
 

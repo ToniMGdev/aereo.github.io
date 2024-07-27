@@ -64,7 +64,7 @@
 /* ------------- seccion 2*/
 
 #slide-3 .section2{
-    background-image: url(/img/plane_img.jpg);
+    background-image: url(img/plane_img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 55% 0;
@@ -103,7 +103,7 @@
 
 #slide-3 .section3{
     background-color: #bc7155;
-    background-image: url(/img/plane_route2.png);
+    background-image: url(img/plane_route2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
