@@ -18,7 +18,7 @@ html {
 
 .containerscroll {
   height: auto;
-  overflow-y: auto;
+  overflow-y: visible;
 }
 }
 
