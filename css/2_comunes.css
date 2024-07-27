@@ -37,4 +37,12 @@ body{
     width: 100%;      
 }
 
+@media (max-width: 400px) {
+
+    .slide .box-container{
+        padding: 10px;
+        height: 100%;
+        width: 100%;      
+    }
+}
 

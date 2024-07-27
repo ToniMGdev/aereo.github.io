@@ -193,4 +193,30 @@
         font-size: 1rem;;
     }
     }
+/* --------------- font movil */
+
+@media (max-width: 400px) {
+    #slide-3 .section1 h1{
+        font-size: 2rem;
+    }
+    
+    #slide-3 .section1 p{
+        font-size: .9rem;
+    }
+    #slide-3 .section2 h1{
+        font-size: 1.8rem;
+    }
+    
+    #slide-3 .section2 p{
+        font-size: .9rem;;
+    }
+    #slide-3 .section3 h1{
+        font-size: 1.8rem;
+    }
+    
+    #slide-3 .section3 p{
+        font-size: .8rem;;
+    }
+
+}
 

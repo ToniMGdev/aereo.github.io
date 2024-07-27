@@ -150,4 +150,23 @@
     }
 }
 
+/* --------------- font movil */
+
+@media (max-width: 400px) {
+    #slide-4 .box-container h1{
+        font-size: 2rem;
+    }
+    #slide-4 .slidermenu li a h2{
+        font-size: 1rem;
+    }
+    #slide-4 .slidermenu li a p{
+        font-size: .9rem;
+    }
+
+    #slide-4 .box-container{
+        padding: 10px 0;    
+    }
+
+}
+
 

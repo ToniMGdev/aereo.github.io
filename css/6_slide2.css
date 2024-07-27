@@ -103,3 +103,15 @@
     }
     }
 
+@media (max-width: 400px) {
+    #slide-2 h1{ 
+        font-size: 2rem;  
+        line-height: 2rem; 
+    }
+
+    #slide-2 section h2{
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+
+}

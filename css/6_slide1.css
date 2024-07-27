@@ -220,3 +220,28 @@
     font-size: 2rem;
 }
 }
+
+/* --------------- movil */
+
+@media (max-width: 400px) {
+
+    #slide-1 .titulo{ 
+        font-size: 2rem;
+    }
+    
+    #slide-1 .titulo span {
+        font-size: 1rem;
+    }
+    
+    #slide-1 .menu p{
+        font-size: 1rem;
+    }
+    .footer p{
+        font-size: 1rem;
+    }
+
+    .footer a{
+        font-size: .8rem;
+        text-align: center;
+    }
+  }
